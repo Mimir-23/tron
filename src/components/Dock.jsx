@@ -41,7 +41,7 @@ export default function Dock({ items, className = "" }) {
       transition={{ duration: 1, ease: "easeOut" }}
       className={`fixed z-50 bottom-4 left-0 right-0 mx-auto w-[90%] max-w-md flex flex-row justify-around items-center gap-6 bg-black/70 border-2 border-tron-neon/60 rounded-2xl backdrop-blur-lg p-3 overflow-hidden
                  sm:bottom-6 sm:p-4
-                 md:top-[30%] md:right-4 md:left-auto md:bottom-auto md:mx-0 md:translate-y-0 md:w-24 md:flex-col md:justify-center md:items-center md:gap-14 md:rounded-3xl md:min-h-[500px] md:border-2 md:border-tron-neon/80 md:p-6`}
+                 md:top-[20%] md:right-4 md:left-auto md:bottom-auto md:mx-0 md:translate-y-0 md:w-24 md:flex-col md:justify-center md:items-center md:gap-14 md:rounded-3xl md:min-h-[400px] md:border-2 md:border-tron-neon/80 md:p-6`}
     >
       {/* Scan Line Animation */}
       <motion.div

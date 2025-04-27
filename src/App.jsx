@@ -1,14 +1,19 @@
 import Hero from './components/Hero';
+import Synopsis from './components/Synopsis'; // Nuevo import 🔥
 import Dock from './components/Dock';
 import Characters from './components/Characters';
 import Soundtrack from './components/Soundtrack';
 import Footer from './components/Footer';
 
-import { VscHome, VscArchive, VscLibrary, VscInfo } from "react-icons/vsc"; // Iconos de React Icons
+import { VscHome, VscBook, VscArchive, VscLibrary, VscInfo } from "react-icons/vsc"; // Agregamos VscBook para Sinopsis
 
 const items = [
   { icon: <VscHome size={20} />, label: 'Home', onClick: () => {
     const element = document.getElementById('hero');
+    if (element) element.scrollIntoView({ behavior: 'smooth' });
+  }},
+  { icon: <VscBook size={20} />, label: 'Synopsis', onClick: () => {
+    const element = document.getElementById('synopsis');
     if (element) element.scrollIntoView({ behavior: 'smooth' });
   }},
   { icon: <VscArchive size={20} />, label: 'Grid', onClick: () => {
@@ -31,6 +36,11 @@ function App() {
       {/* Hero Section */}
       <div id="hero">
         <Hero />
+      </div>
+
+      {/* Sección de Sinopsis */}
+      <div id="synopsis">
+        <Synopsis />
       </div>
 
       {/* Sección de Personajes */}
