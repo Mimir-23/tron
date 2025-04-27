@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes energy-blink {
+  0%, 90%, 100% {
+    box-shadow: 0 0 20px #00FFF7;
+  }
+  95% {
+    box-shadow: 0 0 35px #00FFF7, 0 0 50px #00FFF7;
+  }
+}
+
+.animate-energy-blink {
+  animation: energy-blink 5s infinite ease-in-out;
+}
